@@ -1,0 +1,8 @@
+--> git stash --> save changes temporarily
+--> then working in another branch
+--> using git stash pop -> we can get our old work in that working branch
+--> git stash apply --> apply only
+--> git stash drop -> delete stash
+--> git stash list --> to view all stashed work
+--> git stash apply <stash_name> --> apply specific stash
+--> git stash clear --> clear all stashes
