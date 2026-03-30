@@ -1,0 +1,8 @@
+--> this is file1
+--> before staging and commiting
+
+--> new branch created as branch1
+--> updated in branch1
+
+--> now made changes and created the second branch as branch2
+--> going to update in branch2
