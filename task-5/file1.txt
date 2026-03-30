@@ -1,3 +1,7 @@
 --> sample file
 
 --> line 1
+--> line 2
+--> Typo line
+--> fix typo
+--> after staging
