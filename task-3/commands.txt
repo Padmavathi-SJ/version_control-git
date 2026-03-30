@@ -1,2 +1,9 @@
---> git status -  will show as modified: task-3/file1.txt
---> git restore <file_path> -  will restore to the last commit state
+1. git restore <file_name> - undo the last change in a file
+
+--> commit change
+git add .
+git commit -m "test commit"
+
+--> undo commit safely
+git rever HEAD
+
