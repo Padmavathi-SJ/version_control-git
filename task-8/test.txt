@@ -4,3 +4,24 @@ Running pre-commit checks...
 [main 3d97eae] test commit
  1 file changed, 13 insertions(+)
  create mode 100644 task-8/check.js
+
+ --> How git hooks improve code quality
+ 1. prevent bad code
+  --> stops commits with errors
+  --> enforces coding standards
+
+2. automatic validation
+ --> runs lint, tests automatically
+ --> no need for manual checking
+
+3. consistency in team
+ --> same rules for all developers
+ --> avoids "it works on my machine" issues
+
+4. saves time in code review
+ --> fewer bugs reach PR stage
+ --> cleaner commits
+
+5. enforces best practices
+ --> no debug logs
+ --> no sensitive files(.env)
