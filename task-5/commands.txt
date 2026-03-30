@@ -61,3 +61,22 @@ pick 820e0f4 fixed typo
 </git-rebase-todo" [unix] 35L, 1580B
 
 
+1. git rebase -i --> modify commit history as we want
+2. squash -> merge commits
+3. reword -> fix messages
+4. pick -> keep commit as it is
+5. edit -> modify commit contents
+6. drop -> remove commit
+
+-->ex commits before rebasing and editing commit history
+initial commit
+add line 2
+added typo
+fixed typo
+
+--> after editing the commit history with squash and edit
+--> the commit history looks like:
+Initial commit
+Added line 2 with typo fixes.
+
+--> clean history <-> better collaboration.
