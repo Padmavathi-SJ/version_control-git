@@ -1,3 +1,51 @@
 --> this is file1
 --> before staging and commiting
 
+--> new branch created as branch1
+--> updated in branch1
+
+--> now made changes and created the second branch as branch2
+--> going to update in branch2
+
+--> merge conflict happended, when try to merge the same change in 2 diff branches
+
+padma@Padmavathi MINGW64 /e/Presidio-Tasks/version_control-git (main)
+$ git merge branch2
+Auto-merging task-4/file1.txt
+CONFLICT (add/add): Merge conflict in task-4/file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+padma@Padmavathi MINGW64 /e/Presidio-Tasks/version_control-git (main|MERGING)
+$ git status
+On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)  
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)  
+        both added:      task-4/file1.txt       
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+padma@Padmavathi MINGW64 /e/Presidio-Tasks/version_control-git (main|MERGING)
+$
+
+padma@Padmavathi MINGW64 /e/Presidio-Tasks/version_control-git (main|MERGING)
+$ git diff
+diff --cc task-4/file1.txt
+index 21b0cfa,8dd44e2..0000000
+--- a/task-4/file1.txt
++++ b/task-4/file1.txt
+@@@ -1,3 -1,8 +1,37 @@@
+  --> this is file1
+  --> before staging and commiting
+
+++<<<<<<< HEAD
+++=======
++ --> new branch created as branch1
++ --> updated in branch1
++
++ --> now made changes and created the second br:
+
+--> I think, conflict will be solved, I made changes to this file.
