@@ -11,9 +11,10 @@ git basic commands:
 9. git branch -M main - to move to main branch
 10. git push -u origin main - to upload local commits to remote repository. (-u sets upstream(local main <-> remote main), next time, we can just run 'git push')
 
- --> if main branch has no commit reference(HEAD) means, we cannot create another new branch.
- --> after commiting in main branch, 
+--> if main branch has no commit reference(HEAD) means, we cannot create another new branch.
+--> after commiting in main branch, 
 
 11. git branch feature-branch - create new branch
 12. git checkout feature-branch -  switch to new branch 
 13. git checkout -b feature branch -  single command to create new branch and switch to that branch.
+
