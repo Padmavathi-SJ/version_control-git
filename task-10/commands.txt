@@ -1,0 +1,51 @@
+rebase - git rebase I
+force push - git push --force
+safe push - --force-with-lease
+recover commits - git reflog
+restore - git checkout -b
+
+rebase -> rewrite history
+force push -> update remote
+mistake -> lost commits
+reflog -> recovery
+
+# setup
+git init
+git add .
+git commit -m "init"
+git branch -M main
+
+# feature branch
+git checkout -b feature-login
+git commit -am "feature"
+git commit -am "fix"
+
+# bugfix
+git checkout -b bugfix-login
+git commit -am "bugfix"
+
+# release
+git checkout main
+git checkout -b release-v1
+git merge feature-login
+git merge bugfix-login
+
+# push
+git remote add origin <url>
+git push -u origin main
+git push origin feature-login bugfix-login release-v1
+
+# rebase
+git checkout feature-login
+git rebase -i HEAD~2
+
+# force push
+git push --force origin feature-login
+
+# recovery
+git reflog
+git checkout -b recovery <commit-id>
+git merge recovery
+
+
+Commit → Rebase → Force Push → Mistake → Reflog → Recovery
