@@ -1,0 +1,26 @@
+1. git init - Initializes a new Git repository in the project folder.
+2. git add . - adds all files to the staging area (ready to commit).
+3. git commit -m "commit msg" - saves the staged files as a snapshop with a message.
+4. git remote -v - displays connected remote repositories.
+5. git remote add origin <repo-url> - to link the local repositoryto a remote repository.
+6. git branch -M main - renames current branch to main.
+7. git push -u origin main - pushes local main branch to remote and sets upstream tracking.
+8. git checkout -b <new_branch_name> - to crate a new branch and swithces to it.
+9. git add . - stage modified files
+10. git commit -m "uploading files to newly created branch" - commits changes with a msg.
+11. git push origin <branch_name> - uploads the feature branch to remote.
+
+--> give 'compare and pull request"
+--> create pull request, if no conflicts, merge with main branch
+--> update after code review
+git add .
+git commit -m "fixed/merged feature branch with main branch"
+git push origin feature-branch
+
+--> sync local repository
+12. git checkout main - switch from feature-branch to main branch
+13. git pull origin main - download and uploads local branch with remote changes.
+
+14. git branch -d -> delete branch
+15. PR(Pull Request) -> a pull request is a request to merge your code changes from one branch into another branch in a remote repository.
+Local -> commit -> push -> Pull Request -> Review -> Merge -> Pull
